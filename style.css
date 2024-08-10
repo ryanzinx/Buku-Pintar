@@ -1,0 +1,254 @@
+/* Umum */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Kartu */
+.card {
+    width: 100%;
+    max-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    object-fit: cover;
+}
+
+/* Banner Header */
+.header-banner {
+    position: relative;
+    background-image: url('assets/foto/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.header-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header-banner-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header-banner-content img.logo {
+    width: 80px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+    height: auto; /* Biarkan tinggi menyesuaikan dengan lebar secara proporsional */
+    margin-right: 20px; /* Jarak antara logo dan teks */
+}
+
+/* Navigasi */
+.navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Bagian Hero */
+.hero {
+    position: relative;
+    background-image: url('assets/foto/Landing-Herojpg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Informasi Real-Time */
+.real-time-info {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* Bagian Footer */
+footer {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    color: #555;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Profil Section */
+.profile {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.profile h4 {
+    color: #1e90ff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.profile p {
+    font-size: 18px;
+}
+.profile ul {
+    list-style: none;
+    padding-left: 0;
+}
+.profile li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+.profile li::before {
+    content: "•";
+    color: #1e90ff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Kontak Section */
+.kontak {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.kontak h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.kontak p {
+    color: #555;
+}
+
+/* Ikon Sosial */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Garis Pemisah */
+hr {
+    border: 0;
+    border-top: 1px solid black;
+    margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+    .header-banner {
+        height: 100px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
